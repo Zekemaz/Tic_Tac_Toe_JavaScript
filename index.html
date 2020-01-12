@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="morpion.css">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri|Lato|Montserrat|Raleway|Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section id="global">
+        <h1 class="title">TIC TAC TOE</h1>
+        <div id="replay">
+            <!-- <button onClick="initializeGame()" id="buttonReplay">Start Game</button> -->
+            <button onClick="window.location.reload()" id="buttonReplay">Start Game</button>
+        </div>
+        <p id="introTicTacToe">Pick your house then pick your spot.</p>
+        <div id="buttonChoice">
+            <button id="X" onclick="choseSign('X')">X</button>
+            <button id ="O" onclick="choseSign('O')">O</button>
+            <!-- <button onclick = "iA.random" id="test"></button> -->
+
+        </div>
+        <!-- <div id="choiceGameMode">
+            <button id="IA">PvIA</button>
+            <button id="PvP">PvP</button>
+        </div> -->
+        <div id="morpion_area"><p id="winnerArea"></p>
+        </div>
+       
+        
+
+
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
