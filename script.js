@@ -7,6 +7,8 @@ CREATE TABLE FOR SPOTS
 CREATE SCORE
  */
 
+var XElement = document.getElementById("X")
+var OElement = document.getElementById("O")
 function initializeGame()
 {
     var tab = new Array(9);
@@ -29,7 +31,7 @@ var oMoves = 0
 /* choix du signe */
 function choseSign(choseXorO){
     storedSign = choseXorO;
-    h
+
 
 }
 var tab_user= []
@@ -48,10 +50,15 @@ function choseSpot(id){
     if(storedSign == 'X')
     {
         storedSign = 'O'
+        XElement.style.display = "none";
+        OElement.style.display = "inline-block";
+
     }
     else if (storedSign == 'O')
     {
         storedSign = 'X'
+        OElement.style.display = "none";
+        XElement.style.display = "inline-block";
     }
 
     winner('div0','div1','div2');
@@ -81,13 +88,3 @@ function winner(a,b,c){
     }
 }
 
-
-// if (totalMoves < 9)
-// {
-//     choseSign(choseXorO)
-//     choseSpot(id)
-// }
-// else if(totalMoves == 9)
-// {
-    
-// }
