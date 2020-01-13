@@ -3,7 +3,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
-font-family: 'Gayathri', sans-serif; 
+font-family: 'Gayathri', sans-serif;  
 */
 body{
     background-color: #E5ECF8;
@@ -21,6 +21,7 @@ button#buttonReplay{
     border-radius: 20px;
     font-size: 20px;
     margin-bottom: 2%;
+    outline: none;
 }
 section#global > h1{
     font-size: 40px;
